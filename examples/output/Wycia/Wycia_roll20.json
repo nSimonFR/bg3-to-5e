@@ -1,0 +1,675 @@
+{
+  "schema_version": 3,
+  "character": {
+    "name": "Wycia",
+    "avatar": "",
+    "bio": "Converted from Baldur's Gate 3",
+    "attribs": [
+      {
+        "name": "character_name",
+        "current": "Wycia"
+      },
+      {
+        "name": "base_level",
+        "current": "12"
+      },
+      {
+        "name": "level",
+        "current": "12"
+      },
+      {
+        "name": "experience",
+        "current": "0"
+      },
+      {
+        "name": "race",
+        "current": "Half-Elf"
+      },
+      {
+        "name": "background",
+        "current": "Noble"
+      },
+      {
+        "name": "alignment",
+        "current": "Neutral"
+      },
+      {
+        "name": "player_name",
+        "current": ""
+      },
+      {
+        "name": "class",
+        "current": "Sorcerer 12"
+      },
+      {
+        "name": "multiclass1_flag",
+        "current": "0"
+      },
+      {
+        "name": "class",
+        "current": "Sorcerer"
+      },
+      {
+        "name": "subclass",
+        "current": "Draconic Bloodline"
+      },
+      {
+        "name": "hitdietype",
+        "current": "6"
+      },
+      {
+        "name": "strength",
+        "current": "8"
+      },
+      {
+        "name": "strength_base",
+        "current": "8"
+      },
+      {
+        "name": "strength_mod",
+        "current": "-1"
+      },
+      {
+        "name": "dexterity",
+        "current": "14"
+      },
+      {
+        "name": "dexterity_base",
+        "current": "14"
+      },
+      {
+        "name": "dexterity_mod",
+        "current": "2"
+      },
+      {
+        "name": "constitution",
+        "current": "16"
+      },
+      {
+        "name": "constitution_base",
+        "current": "16"
+      },
+      {
+        "name": "constitution_mod",
+        "current": "3"
+      },
+      {
+        "name": "intelligence",
+        "current": "10"
+      },
+      {
+        "name": "intelligence_base",
+        "current": "10"
+      },
+      {
+        "name": "intelligence_mod",
+        "current": "0"
+      },
+      {
+        "name": "wisdom",
+        "current": "12"
+      },
+      {
+        "name": "wisdom_base",
+        "current": "12"
+      },
+      {
+        "name": "wisdom_mod",
+        "current": "1"
+      },
+      {
+        "name": "charisma",
+        "current": "20"
+      },
+      {
+        "name": "charisma_base",
+        "current": "20"
+      },
+      {
+        "name": "charisma_mod",
+        "current": "5"
+      },
+      {
+        "name": "strength_save_bonus",
+        "current": "-1"
+      },
+      {
+        "name": "strength_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "dexterity_save_bonus",
+        "current": "2"
+      },
+      {
+        "name": "dexterity_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "constitution_save_bonus",
+        "current": "7"
+      },
+      {
+        "name": "constitution_save_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "intelligence_save_bonus",
+        "current": "0"
+      },
+      {
+        "name": "intelligence_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "wisdom_save_bonus",
+        "current": "1"
+      },
+      {
+        "name": "wisdom_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "charisma_save_bonus",
+        "current": "9"
+      },
+      {
+        "name": "charisma_save_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "hp",
+        "current": "98",
+        "max": "98"
+      },
+      {
+        "name": "hp_temp",
+        "current": "0"
+      },
+      {
+        "name": "ac",
+        "current": "18"
+      },
+      {
+        "name": "initiative_bonus",
+        "current": "2"
+      },
+      {
+        "name": "speed",
+        "current": "30"
+      },
+      {
+        "name": "hitdietype",
+        "current": "6"
+      },
+      {
+        "name": "hitdie",
+        "current": "12",
+        "max": "12"
+      },
+      {
+        "name": "pb",
+        "current": "4"
+      },
+      {
+        "name": "deathsave_succ1",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_succ2",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_succ3",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail1",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail2",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail3",
+        "current": "0"
+      },
+      {
+        "name": "acrobatics_bonus",
+        "current": "2"
+      },
+      {
+        "name": "acrobatics_prof",
+        "current": "0"
+      },
+      {
+        "name": "acrobatics_type",
+        "current": "0"
+      },
+      {
+        "name": "animalhandling_bonus",
+        "current": "1"
+      },
+      {
+        "name": "animalhandling_prof",
+        "current": "0"
+      },
+      {
+        "name": "animalhandling_type",
+        "current": "0"
+      },
+      {
+        "name": "arcana_bonus",
+        "current": "4"
+      },
+      {
+        "name": "arcana_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "arcana_type",
+        "current": "1"
+      },
+      {
+        "name": "athletics_bonus",
+        "current": "-1"
+      },
+      {
+        "name": "athletics_prof",
+        "current": "0"
+      },
+      {
+        "name": "athletics_type",
+        "current": "0"
+      },
+      {
+        "name": "deception_bonus",
+        "current": "9"
+      },
+      {
+        "name": "deception_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "deception_type",
+        "current": "1"
+      },
+      {
+        "name": "history_bonus",
+        "current": "0"
+      },
+      {
+        "name": "history_prof",
+        "current": "0"
+      },
+      {
+        "name": "history_type",
+        "current": "0"
+      },
+      {
+        "name": "insight_bonus",
+        "current": "1"
+      },
+      {
+        "name": "insight_prof",
+        "current": "0"
+      },
+      {
+        "name": "insight_type",
+        "current": "0"
+      },
+      {
+        "name": "intimidation_bonus",
+        "current": "5"
+      },
+      {
+        "name": "intimidation_prof",
+        "current": "0"
+      },
+      {
+        "name": "intimidation_type",
+        "current": "0"
+      },
+      {
+        "name": "investigation_bonus",
+        "current": "0"
+      },
+      {
+        "name": "investigation_prof",
+        "current": "0"
+      },
+      {
+        "name": "investigation_type",
+        "current": "0"
+      },
+      {
+        "name": "medicine_bonus",
+        "current": "1"
+      },
+      {
+        "name": "medicine_prof",
+        "current": "0"
+      },
+      {
+        "name": "medicine_type",
+        "current": "0"
+      },
+      {
+        "name": "nature_bonus",
+        "current": "0"
+      },
+      {
+        "name": "nature_prof",
+        "current": "0"
+      },
+      {
+        "name": "nature_type",
+        "current": "0"
+      },
+      {
+        "name": "perception_bonus",
+        "current": "1"
+      },
+      {
+        "name": "perception_prof",
+        "current": "0"
+      },
+      {
+        "name": "perception_type",
+        "current": "0"
+      },
+      {
+        "name": "performance_bonus",
+        "current": "5"
+      },
+      {
+        "name": "performance_prof",
+        "current": "0"
+      },
+      {
+        "name": "performance_type",
+        "current": "0"
+      },
+      {
+        "name": "persuasion_bonus",
+        "current": "13"
+      },
+      {
+        "name": "persuasion_prof",
+        "current": "(@{pb}*2)"
+      },
+      {
+        "name": "persuasion_type",
+        "current": "2"
+      },
+      {
+        "name": "religion_bonus",
+        "current": "0"
+      },
+      {
+        "name": "religion_prof",
+        "current": "0"
+      },
+      {
+        "name": "religion_type",
+        "current": "0"
+      },
+      {
+        "name": "sleightofhand_bonus",
+        "current": "2"
+      },
+      {
+        "name": "sleightofhand_prof",
+        "current": "0"
+      },
+      {
+        "name": "sleightofhand_type",
+        "current": "0"
+      },
+      {
+        "name": "stealth_bonus",
+        "current": "2"
+      },
+      {
+        "name": "stealth_prof",
+        "current": "0"
+      },
+      {
+        "name": "stealth_type",
+        "current": "0"
+      },
+      {
+        "name": "survival_bonus",
+        "current": "1"
+      },
+      {
+        "name": "survival_prof",
+        "current": "0"
+      },
+      {
+        "name": "survival_type",
+        "current": "0"
+      },
+      {
+        "name": "passive_wisdom",
+        "current": "11"
+      },
+      {
+        "name": "spellcasting_ability",
+        "current": "@{charisma_mod}+"
+      },
+      {
+        "name": "spell_save_dc",
+        "current": "17"
+      },
+      {
+        "name": "spell_attack_bonus",
+        "current": "9"
+      },
+      {
+        "name": "lvl1_slots_total",
+        "current": "4"
+      },
+      {
+        "name": "lvl1_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl2_slots_total",
+        "current": "3"
+      },
+      {
+        "name": "lvl2_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl3_slots_total",
+        "current": "3"
+      },
+      {
+        "name": "lvl3_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl4_slots_total",
+        "current": "3"
+      },
+      {
+        "name": "lvl4_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl5_slots_total",
+        "current": "2"
+      },
+      {
+        "name": "lvl5_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl6_slots_total",
+        "current": "1"
+      },
+      {
+        "name": "lvl6_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl7_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl7_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl8_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl8_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl9_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl9_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "cp",
+        "current": "0"
+      },
+      {
+        "name": "sp",
+        "current": "0"
+      },
+      {
+        "name": "ep",
+        "current": "0"
+      },
+      {
+        "name": "gp",
+        "current": "15000"
+      },
+      {
+        "name": "pp",
+        "current": "0"
+      },
+      {
+        "name": "personality_traits",
+        "current": ""
+      },
+      {
+        "name": "ideals",
+        "current": ""
+      },
+      {
+        "name": "bonds",
+        "current": ""
+      },
+      {
+        "name": "flaws",
+        "current": ""
+      },
+      {
+        "name": "features_and_traits",
+        "current": "**Draconic Resilience** (class)\nYour hit point maximum increases by 1 for each sorcerer level.\n\n**Metamagic: Quickened Spell** (class)\nCast a spell with casting time of 1 action as a bonus action.\n\n**Metamagic: Twinned Spell** (class)\nTarget two creatures with a single-target spell.\n\n**Elemental Affinity** (class)\nAdd CHA modifier to damage of spells matching your draconic ancestry."
+      },
+      {
+        "name": "equipment",
+        "current": "[E] Staff of the Magi (similar)\n[E] Robe of the Weave\n[E] +1 Ring of Protection\nPotion of Greater Healing (x5)"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Initiative",
+        "action": "/roll 1d20+@{initiative_bonus} &{tracker}",
+        "istokenaction": true
+      },
+      {
+        "name": "Strength Save",
+        "action": "/roll 1d20+@{strength_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Dexterity Save",
+        "action": "/roll 1d20+@{dexterity_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Constitution Save",
+        "action": "/roll 1d20+@{constitution_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Intelligence Save",
+        "action": "/roll 1d20+@{intelligence_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Wisdom Save",
+        "action": "/roll 1d20+@{wisdom_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Charisma Save",
+        "action": "/roll 1d20+@{charisma_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Fire Bolt",
+        "action": "&{template:spell} {{name=Fire Bolt}} {{level=0}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Mage Hand",
+        "action": "&{template:spell} {{name=Mage Hand}} {{level=0}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Ray of Frost",
+        "action": "&{template:spell} {{name=Ray of Frost}} {{level=0}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Chill Touch",
+        "action": "&{template:spell} {{name=Chill Touch}} {{level=0}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Shield",
+        "action": "&{template:spell} {{name=Shield}} {{level=1}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Magic Missile",
+        "action": "&{template:spell} {{name=Magic Missile}} {{level=1}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Misty Step",
+        "action": "&{template:spell} {{name=Misty Step}} {{level=2}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Scorching Ray",
+        "action": "&{template:spell} {{name=Scorching Ray}} {{level=2}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Fireball",
+        "action": "&{template:spell} {{name=Fireball}} {{level=3}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Counterspell",
+        "action": "&{template:spell} {{name=Counterspell}} {{level=3}}",
+        "istokenaction": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "_id": "9574cd8f-a6f1-47",
+  "name": "Lilith",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 1,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 15,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 78,
+        "max": 78,
+        "temp": 0,
+        "tempmax": 0
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      },
+      "movement": {
+        "walk": 30,
+        "swim": 0,
+        "fly": 0,
+        "climb": 0,
+        "burrow": 0,
+        "hover": false,
+        "units": "ft"
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 0,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft"
+      },
+      "spellcasting": "",
+      "exhaustion": 0,
+      "hd": {
+        "d8": {
+          "value": 5,
+          "max": 5
+        },
+        "d6": {
+          "value": 7,
+          "max": 7
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0
+      },
+      "inspiration": false,
+      "prof": 4
+    },
+    "details": {
+      "biography": {
+        "value": "<p>Converted from Baldur's Gate 3</p>",
+        "public": ""
+      },
+      "alignment": "Neutral",
+      "race": "Tiefling",
+      "background": "Charlatan",
+      "originalClass": "Sorcerer",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "level": 12
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "custom": ""
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": ""
+      },
+      "armorProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 8500,
+      "pp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "arc": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "dec": {
+        "value": 2,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 1,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 4,
+        "max": 4,
+        "override": null
+      },
+      "spell2": {
+        "value": 3,
+        "max": 3,
+        "override": null
+      },
+      "spell3": {
+        "value": 3,
+        "max": 3,
+        "override": null
+      },
+      "spell4": {
+        "value": 1,
+        "max": 1,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      },
+      "pact": {
+        "value": 0,
+        "max": 0,
+        "override": null
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "636399b7-7d8a-4f",
+      "name": "Warlock",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "identifier": "warlock",
+        "levels": 5,
+        "subclass": "The Fiend",
+        "hitDice": "d8",
+        "hitDiceUsed": 0
+      }
+    },
+    {
+      "_id": "5e5ac956-bce0-43",
+      "name": "Sorcerer",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "identifier": "sorcerer",
+        "levels": 7,
+        "subclass": "Draconic Bloodline",
+        "hitDice": "d6",
+        "hitDiceUsed": 0
+      }
+    },
+    {
+      "_id": "1db13793-948d-42",
+      "name": "Eldritch Blast",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "level": 0,
+        "school": "evo",
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        }
+      }
+    },
+    {
+      "_id": "6db7715f-22c5-4e",
+      "name": "Hex",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "level": 1,
+        "school": "enc",
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        }
+      }
+    },
+    {
+      "_id": "b906c721-c2db-49",
+      "name": "Hellish Rebuke",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "level": 1,
+        "school": "evoc",
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        }
+      }
+    },
+    {
+      "_id": "ef8dcb0d-7680-4a",
+      "name": "Armor of Agathys",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "level": 1,
+        "school": "evoc",
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        }
+      }
+    },
+    {
+      "_id": "f123dea7-aa1a-42",
+      "name": "Fireball",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "level": 3,
+        "school": "evo",
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        }
+      }
+    },
+    {
+      "_id": "7a36c4b2-8481-4b",
+      "name": "Crimson Mischief",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "BG3-unique shortsword. Treat as homebrew."
+        },
+        "source": "BG3",
+        "quantity": 1,
+        "equipped": true,
+        "rarity": "uncommon",
+        "attunement": "required",
+        "attuned": false
+      }
+    },
+    {
+      "_id": "fec01c3d-4d2c-43",
+      "name": "Bloodthirst",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "BG3-unique dagger. Treat as homebrew legendary."
+        },
+        "source": "BG3",
+        "quantity": 1,
+        "equipped": true,
+        "rarity": "uncommon",
+        "attunement": "required",
+        "attuned": false
+      }
+    },
+    {
+      "_id": "536b18bd-5d90-40",
+      "name": "Studded Leather",
+      "type": "equipment",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": "BG3",
+        "quantity": 1,
+        "equipped": true,
+        "rarity": "common",
+        "attunement": "",
+        "attuned": false
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "bg3-to-5e": {
+      "source": "bg3",
+      "originalName": "Lilith",
+      "conversionWarnings": 8
+    }
+  },
+  "prototypeToken": {
+    "name": "Lilith",
+    "displayName": 20,
+    "actorLink": true,
+    "disposition": 1
+  }
+}

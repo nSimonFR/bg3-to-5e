@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0",
+  "name": "Wycia",
+  "player_name": "",
+  "race": "Half-Elf",
+  "subrace": null,
+  "background": "Noble",
+  "alignment": "Neutral",
+  "level": 12,
+  "classes": [
+    {
+      "name": "Sorcerer",
+      "level": 12,
+      "subclass": "Draconic Bloodline"
+    }
+  ],
+  "ability_scores": {
+    "strength": 8,
+    "dexterity": 14,
+    "constitution": 16,
+    "intelligence": 10,
+    "wisdom": 12,
+    "charisma": 20
+  },
+  "ability_modifiers": {
+    "strength": -1,
+    "dexterity": 2,
+    "constitution": 3,
+    "intelligence": 0,
+    "wisdom": 1,
+    "charisma": 5
+  },
+  "hit_points": {
+    "maximum": 98,
+    "current": 98,
+    "temporary": 0
+  },
+  "armor_class": 18,
+  "initiative": 2,
+  "speed": 30,
+  "hit_dice": "12d6",
+  "proficiency_bonus": 4,
+  "saving_throws": {
+    "strength": {
+      "proficient": false,
+      "modifier": -1
+    },
+    "dexterity": {
+      "proficient": false,
+      "modifier": 2
+    },
+    "constitution": {
+      "proficient": true,
+      "modifier": 7
+    },
+    "intelligence": {
+      "proficient": false,
+      "modifier": 0
+    },
+    "wisdom": {
+      "proficient": false,
+      "modifier": 1
+    },
+    "charisma": {
+      "proficient": true,
+      "modifier": 9
+    }
+  },
+  "skills": {
+    "acrobatics": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 2
+    },
+    "animal_handling": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 1
+    },
+    "arcana": {
+      "ability": "intelligence",
+      "proficient": true,
+      "expertise": false,
+      "modifier": 4
+    },
+    "athletics": {
+      "ability": "strength",
+      "proficient": false,
+      "expertise": false,
+      "modifier": -1
+    },
+    "deception": {
+      "ability": "charisma",
+      "proficient": true,
+      "expertise": false,
+      "modifier": 9
+    },
+    "history": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "insight": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 1
+    },
+    "intimidation": {
+      "ability": "charisma",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 5
+    },
+    "investigation": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "medicine": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 1
+    },
+    "nature": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "perception": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 1
+    },
+    "performance": {
+      "ability": "charisma",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 5
+    },
+    "persuasion": {
+      "ability": "charisma",
+      "proficient": true,
+      "expertise": true,
+      "modifier": 13
+    },
+    "religion": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "sleight_of_hand": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 2
+    },
+    "stealth": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 2
+    },
+    "survival": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 1
+    }
+  },
+  "spellcasting": {
+    "ability": "charisma",
+    "spell_save_dc": 17,
+    "spell_attack_bonus": 9,
+    "spell_slots": {
+      "1st": 4,
+      "2nd": 3,
+      "3rd": 3,
+      "4th": 3,
+      "5th": 2,
+      "6th": 1,
+      "7th": 0,
+      "8th": 0,
+      "9th": 0
+    },
+    "spells": {
+      "0": [
+        {
+          "name": "Fire Bolt",
+          "prepared": true,
+          "school": "Evocation"
+        },
+        {
+          "name": "Mage Hand",
+          "prepared": true,
+          "school": "Conjuration"
+        },
+        {
+          "name": "Ray of Frost",
+          "prepared": true,
+          "school": "Evocation"
+        },
+        {
+          "name": "Chill Touch",
+          "prepared": true,
+          "school": "Necromancy"
+        }
+      ],
+      "1": [
+        {
+          "name": "Shield",
+          "prepared": true,
+          "school": "Abjuration"
+        },
+        {
+          "name": "Magic Missile",
+          "prepared": true,
+          "school": "Evocation"
+        }
+      ],
+      "2": [
+        {
+          "name": "Misty Step",
+          "prepared": true,
+          "school": "Conjuration"
+        },
+        {
+          "name": "Scorching Ray",
+          "prepared": true,
+          "school": "Evocation"
+        }
+      ],
+      "3": [
+        {
+          "name": "Fireball",
+          "prepared": true,
+          "school": "Evocation"
+        },
+        {
+          "name": "Counterspell",
+          "prepared": true,
+          "school": "Abjuration"
+        },
+        {
+          "name": "Haste",
+          "prepared": true,
+          "school": "Transmutation"
+        }
+      ],
+      "4": [
+        {
+          "name": "Greater Invisibility",
+          "prepared": true,
+          "school": "Illusion"
+        },
+        {
+          "name": "Dimension Door",
+          "prepared": true,
+          "school": "Conjuration"
+        }
+      ],
+      "5": [
+        {
+          "name": "Cone of Cold",
+          "prepared": true,
+          "school": "Evocation"
+        }
+      ],
+      "6": [
+        {
+          "name": "Disintegrate",
+          "prepared": true,
+          "school": "Transmutation"
+        }
+      ]
+    }
+  },
+  "equipment": [
+    {
+      "name": "Staff of the Magi (similar)",
+      "type": "weapon",
+      "equipped": true,
+      "quantity": 1,
+      "magical": true,
+      "attunement_required": true,
+      "attuned": true
+    },
+    {
+      "name": "Robe of the Weave",
+      "type": "armor",
+      "equipped": true,
+      "quantity": 1,
+      "magical": true,
+      "attunement_required": true,
+      "attuned": true
+    },
+    {
+      "name": "+1 Ring of Protection",
+      "type": "wondrous",
+      "equipped": true,
+      "quantity": 1,
+      "magical": true,
+      "attunement_required": false,
+      "attuned": false
+    },
+    {
+      "name": "Potion of Greater Healing",
+      "type": "consumable",
+      "equipped": false,
+      "quantity": 5,
+      "magical": false,
+      "attunement_required": false,
+      "attuned": false
+    }
+  ],
+  "currency": {
+    "copper": 0,
+    "silver": 0,
+    "electrum": 0,
+    "gold": 15000,
+    "platinum": 0
+  },
+  "features": [
+    {
+      "name": "Draconic Resilience",
+      "source": "class",
+      "description": "Your hit point maximum increases by 1 for each sorcerer level."
+    },
+    {
+      "name": "Metamagic: Quickened Spell",
+      "source": "class",
+      "description": "Cast a spell with casting time of 1 action as a bonus action."
+    },
+    {
+      "name": "Metamagic: Twinned Spell",
+      "source": "class",
+      "description": "Target two creatures with a single-target spell."
+    },
+    {
+      "name": "Elemental Affinity",
+      "source": "class",
+      "description": "Add CHA modifier to damage of spells matching your draconic ancestry."
+    }
+  ],
+  "personality": {
+    "traits": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": ""
+  },
+  "appearance": {
+    "age": "",
+    "height": "",
+    "weight": "",
+    "eyes": "",
+    "skin": "",
+    "hair": ""
+  },
+  "backstory": "",
+  "conversion_info": {
+    "source": "BG3",
+    "source_character": "Wycia",
+    "warnings": [
+      {
+        "category": "spell",
+        "item": "Shield",
+        "message": "Functions identically in both versions.",
+        "severity": "info"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Magic Missile",
+        "message": "BG3: Each missile rolls damage separately.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Magic Missile",
+        "message": "5e: Roll once, apply to all missiles (RAW, though many tables roll separately).",
+        "severity": "warning"
+      },
+      {
+        "category": "spell",
+        "item": "Misty Step",
+        "message": "Functions identically, though BG3 has more precise positioning.",
+        "severity": "info"
+      },
+      {
+        "category": "spell",
+        "item": "Fireball",
+        "message": "Damage and radius are the same, but BG3 has more precise area targeting.",
+        "severity": "info"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Counterspell",
+        "message": "BG3: Reaction is automatic when enemy casts.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Counterspell",
+        "message": "5e: Must identify the spell being cast (optional rule) and choose to react.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Haste",
+        "message": "BG3: Extra action can be used for any action.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Haste",
+        "message": "5e: Extra action limited to Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object.",
+        "severity": "warning"
+      },
+      {
+        "category": "equipment",
+        "item": "Markoheshkir",
+        "message": "BG3-unique legendary staff. Consider as Staff of the Magi or homebrew.",
+        "severity": "warning"
+      },
+      {
+        "category": "equipment",
+        "item": "Robe of the Weave",
+        "message": "Unknown item 'Robe of the Weave', using as-is. May be BG3-specific.",
+        "severity": "info"
+      },
+      {
+        "category": "equipment",
+        "item": "+1 Ring of Protection",
+        "message": "Unknown item '+1 Ring of Protection', using as-is. May be BG3-specific.",
+        "severity": "info"
+      },
+      {
+        "category": "equipment",
+        "item": "Potion of Greater Healing",
+        "message": "Unknown item 'Potion of Greater Healing', using as-is. May be BG3-specific.",
+        "severity": "info"
+      },
+      {
+        "category": "illithid",
+        "item": "Tadpole Powers",
+        "message": "Character has 3 Illithid powers. These have no 5e equivalent.",
+        "severity": "warning"
+      }
+    ]
+  }
+}
