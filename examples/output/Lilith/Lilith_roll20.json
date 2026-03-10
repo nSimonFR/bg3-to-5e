@@ -1,0 +1,654 @@
+{
+  "schema_version": 3,
+  "character": {
+    "name": "Lilith",
+    "avatar": "",
+    "bio": "Converted from Baldur's Gate 3",
+    "attribs": [
+      {
+        "name": "character_name",
+        "current": "Lilith"
+      },
+      {
+        "name": "base_level",
+        "current": "12"
+      },
+      {
+        "name": "level",
+        "current": "12"
+      },
+      {
+        "name": "experience",
+        "current": "0"
+      },
+      {
+        "name": "race",
+        "current": "Tiefling"
+      },
+      {
+        "name": "background",
+        "current": "Charlatan"
+      },
+      {
+        "name": "alignment",
+        "current": "Neutral"
+      },
+      {
+        "name": "player_name",
+        "current": ""
+      },
+      {
+        "name": "class",
+        "current": "Warlock 5 / Sorcerer 7"
+      },
+      {
+        "name": "multiclass1_flag",
+        "current": "0"
+      },
+      {
+        "name": "multiclass2_flag",
+        "current": "1"
+      },
+      {
+        "name": "multiclass1_lvl",
+        "current": "7"
+      },
+      {
+        "name": "multiclass1",
+        "current": "Sorcerer"
+      },
+      {
+        "name": "multiclass1_subclass",
+        "current": "Draconic Bloodline"
+      },
+      {
+        "name": "class",
+        "current": "Warlock"
+      },
+      {
+        "name": "subclass",
+        "current": "The Fiend"
+      },
+      {
+        "name": "hitdietype",
+        "current": "8"
+      },
+      {
+        "name": "strength",
+        "current": "8"
+      },
+      {
+        "name": "strength_base",
+        "current": "8"
+      },
+      {
+        "name": "strength_mod",
+        "current": "-1"
+      },
+      {
+        "name": "dexterity",
+        "current": "16"
+      },
+      {
+        "name": "dexterity_base",
+        "current": "16"
+      },
+      {
+        "name": "dexterity_mod",
+        "current": "3"
+      },
+      {
+        "name": "constitution",
+        "current": "14"
+      },
+      {
+        "name": "constitution_base",
+        "current": "14"
+      },
+      {
+        "name": "constitution_mod",
+        "current": "2"
+      },
+      {
+        "name": "intelligence",
+        "current": "10"
+      },
+      {
+        "name": "intelligence_base",
+        "current": "10"
+      },
+      {
+        "name": "intelligence_mod",
+        "current": "0"
+      },
+      {
+        "name": "wisdom",
+        "current": "10"
+      },
+      {
+        "name": "wisdom_base",
+        "current": "10"
+      },
+      {
+        "name": "wisdom_mod",
+        "current": "0"
+      },
+      {
+        "name": "charisma",
+        "current": "18"
+      },
+      {
+        "name": "charisma_base",
+        "current": "18"
+      },
+      {
+        "name": "charisma_mod",
+        "current": "4"
+      },
+      {
+        "name": "strength_save_bonus",
+        "current": "-1"
+      },
+      {
+        "name": "strength_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "dexterity_save_bonus",
+        "current": "3"
+      },
+      {
+        "name": "dexterity_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "constitution_save_bonus",
+        "current": "2"
+      },
+      {
+        "name": "constitution_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "intelligence_save_bonus",
+        "current": "0"
+      },
+      {
+        "name": "intelligence_save_prof",
+        "current": "0"
+      },
+      {
+        "name": "wisdom_save_bonus",
+        "current": "4"
+      },
+      {
+        "name": "wisdom_save_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "charisma_save_bonus",
+        "current": "8"
+      },
+      {
+        "name": "charisma_save_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "hp",
+        "current": "78",
+        "max": "78"
+      },
+      {
+        "name": "hp_temp",
+        "current": "0"
+      },
+      {
+        "name": "ac",
+        "current": "15"
+      },
+      {
+        "name": "initiative_bonus",
+        "current": "3"
+      },
+      {
+        "name": "speed",
+        "current": "30"
+      },
+      {
+        "name": "hitdietype",
+        "current": "6"
+      },
+      {
+        "name": "hitdie",
+        "current": "12",
+        "max": "12"
+      },
+      {
+        "name": "pb",
+        "current": "4"
+      },
+      {
+        "name": "deathsave_succ1",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_succ2",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_succ3",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail1",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail2",
+        "current": "0"
+      },
+      {
+        "name": "deathsave_fail3",
+        "current": "0"
+      },
+      {
+        "name": "acrobatics_bonus",
+        "current": "3"
+      },
+      {
+        "name": "acrobatics_prof",
+        "current": "0"
+      },
+      {
+        "name": "acrobatics_type",
+        "current": "0"
+      },
+      {
+        "name": "animalhandling_bonus",
+        "current": "0"
+      },
+      {
+        "name": "animalhandling_prof",
+        "current": "0"
+      },
+      {
+        "name": "animalhandling_type",
+        "current": "0"
+      },
+      {
+        "name": "arcana_bonus",
+        "current": "4"
+      },
+      {
+        "name": "arcana_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "arcana_type",
+        "current": "1"
+      },
+      {
+        "name": "athletics_bonus",
+        "current": "-1"
+      },
+      {
+        "name": "athletics_prof",
+        "current": "0"
+      },
+      {
+        "name": "athletics_type",
+        "current": "0"
+      },
+      {
+        "name": "deception_bonus",
+        "current": "12"
+      },
+      {
+        "name": "deception_prof",
+        "current": "(@{pb}*2)"
+      },
+      {
+        "name": "deception_type",
+        "current": "2"
+      },
+      {
+        "name": "history_bonus",
+        "current": "0"
+      },
+      {
+        "name": "history_prof",
+        "current": "0"
+      },
+      {
+        "name": "history_type",
+        "current": "0"
+      },
+      {
+        "name": "insight_bonus",
+        "current": "0"
+      },
+      {
+        "name": "insight_prof",
+        "current": "0"
+      },
+      {
+        "name": "insight_type",
+        "current": "0"
+      },
+      {
+        "name": "intimidation_bonus",
+        "current": "8"
+      },
+      {
+        "name": "intimidation_prof",
+        "current": "@{pb}"
+      },
+      {
+        "name": "intimidation_type",
+        "current": "1"
+      },
+      {
+        "name": "investigation_bonus",
+        "current": "0"
+      },
+      {
+        "name": "investigation_prof",
+        "current": "0"
+      },
+      {
+        "name": "investigation_type",
+        "current": "0"
+      },
+      {
+        "name": "medicine_bonus",
+        "current": "0"
+      },
+      {
+        "name": "medicine_prof",
+        "current": "0"
+      },
+      {
+        "name": "medicine_type",
+        "current": "0"
+      },
+      {
+        "name": "nature_bonus",
+        "current": "0"
+      },
+      {
+        "name": "nature_prof",
+        "current": "0"
+      },
+      {
+        "name": "nature_type",
+        "current": "0"
+      },
+      {
+        "name": "perception_bonus",
+        "current": "0"
+      },
+      {
+        "name": "perception_prof",
+        "current": "0"
+      },
+      {
+        "name": "perception_type",
+        "current": "0"
+      },
+      {
+        "name": "performance_bonus",
+        "current": "4"
+      },
+      {
+        "name": "performance_prof",
+        "current": "0"
+      },
+      {
+        "name": "performance_type",
+        "current": "0"
+      },
+      {
+        "name": "persuasion_bonus",
+        "current": "4"
+      },
+      {
+        "name": "persuasion_prof",
+        "current": "0"
+      },
+      {
+        "name": "persuasion_type",
+        "current": "0"
+      },
+      {
+        "name": "religion_bonus",
+        "current": "0"
+      },
+      {
+        "name": "religion_prof",
+        "current": "0"
+      },
+      {
+        "name": "religion_type",
+        "current": "0"
+      },
+      {
+        "name": "sleightofhand_bonus",
+        "current": "3"
+      },
+      {
+        "name": "sleightofhand_prof",
+        "current": "0"
+      },
+      {
+        "name": "sleightofhand_type",
+        "current": "0"
+      },
+      {
+        "name": "stealth_bonus",
+        "current": "3"
+      },
+      {
+        "name": "stealth_prof",
+        "current": "0"
+      },
+      {
+        "name": "stealth_type",
+        "current": "0"
+      },
+      {
+        "name": "survival_bonus",
+        "current": "0"
+      },
+      {
+        "name": "survival_prof",
+        "current": "0"
+      },
+      {
+        "name": "survival_type",
+        "current": "0"
+      },
+      {
+        "name": "passive_wisdom",
+        "current": "10"
+      },
+      {
+        "name": "lvl1_slots_total",
+        "current": "4"
+      },
+      {
+        "name": "lvl1_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl2_slots_total",
+        "current": "3"
+      },
+      {
+        "name": "lvl2_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl3_slots_total",
+        "current": "3"
+      },
+      {
+        "name": "lvl3_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl4_slots_total",
+        "current": "1"
+      },
+      {
+        "name": "lvl4_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl5_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl5_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl6_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl6_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl7_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl7_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl8_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl8_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "lvl9_slots_total",
+        "current": "0"
+      },
+      {
+        "name": "lvl9_slots_expended",
+        "current": "0"
+      },
+      {
+        "name": "cp",
+        "current": "0"
+      },
+      {
+        "name": "sp",
+        "current": "0"
+      },
+      {
+        "name": "ep",
+        "current": "0"
+      },
+      {
+        "name": "gp",
+        "current": "8500"
+      },
+      {
+        "name": "pp",
+        "current": "0"
+      },
+      {
+        "name": "personality_traits",
+        "current": ""
+      },
+      {
+        "name": "ideals",
+        "current": ""
+      },
+      {
+        "name": "bonds",
+        "current": ""
+      },
+      {
+        "name": "flaws",
+        "current": ""
+      },
+      {
+        "name": "features_and_traits",
+        "current": ""
+      },
+      {
+        "name": "equipment",
+        "current": "[E] Crimson Mischief\n[E] Bloodthirst\n[E] Studded Leather"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Initiative",
+        "action": "/roll 1d20+@{initiative_bonus} &{tracker}",
+        "istokenaction": true
+      },
+      {
+        "name": "Strength Save",
+        "action": "/roll 1d20+@{strength_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Dexterity Save",
+        "action": "/roll 1d20+@{dexterity_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Constitution Save",
+        "action": "/roll 1d20+@{constitution_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Intelligence Save",
+        "action": "/roll 1d20+@{intelligence_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Wisdom Save",
+        "action": "/roll 1d20+@{wisdom_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Charisma Save",
+        "action": "/roll 1d20+@{charisma_save_bonus}",
+        "istokenaction": false
+      },
+      {
+        "name": "Eldritch Blast",
+        "action": "&{template:spell} {{name=Eldritch Blast}} {{level=0}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Hex",
+        "action": "&{template:spell} {{name=Hex}} {{level=1}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Hellish Rebuke",
+        "action": "&{template:spell} {{name=Hellish Rebuke}} {{level=1}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Armor of Agathys",
+        "action": "&{template:spell} {{name=Armor of Agathys}} {{level=1}}",
+        "istokenaction": false
+      },
+      {
+        "name": "Fireball",
+        "action": "&{template:spell} {{name=Fireball}} {{level=3}}",
+        "istokenaction": false
+      }
+    ]
+  }
+}

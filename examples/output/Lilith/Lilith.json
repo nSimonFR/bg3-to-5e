@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "name": "Lilith",
+  "player_name": "",
+  "race": "Tiefling",
+  "subrace": null,
+  "background": "Charlatan",
+  "alignment": "Neutral",
+  "level": 12,
+  "classes": [
+    {
+      "name": "Warlock",
+      "level": 5,
+      "subclass": "The Fiend"
+    },
+    {
+      "name": "Sorcerer",
+      "level": 7,
+      "subclass": "Draconic Bloodline"
+    }
+  ],
+  "ability_scores": {
+    "strength": 8,
+    "dexterity": 16,
+    "constitution": 14,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 18
+  },
+  "ability_modifiers": {
+    "strength": -1,
+    "dexterity": 3,
+    "constitution": 2,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charisma": 4
+  },
+  "hit_points": {
+    "maximum": 78,
+    "current": 78,
+    "temporary": 0
+  },
+  "armor_class": 15,
+  "initiative": 3,
+  "speed": 30,
+  "hit_dice": "5d8 + 7d6",
+  "proficiency_bonus": 4,
+  "saving_throws": {
+    "strength": {
+      "proficient": false,
+      "modifier": -1
+    },
+    "dexterity": {
+      "proficient": false,
+      "modifier": 3
+    },
+    "constitution": {
+      "proficient": false,
+      "modifier": 2
+    },
+    "intelligence": {
+      "proficient": false,
+      "modifier": 0
+    },
+    "wisdom": {
+      "proficient": true,
+      "modifier": 4
+    },
+    "charisma": {
+      "proficient": true,
+      "modifier": 8
+    }
+  },
+  "skills": {
+    "acrobatics": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 3
+    },
+    "animal_handling": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "arcana": {
+      "ability": "intelligence",
+      "proficient": true,
+      "expertise": false,
+      "modifier": 4
+    },
+    "athletics": {
+      "ability": "strength",
+      "proficient": false,
+      "expertise": false,
+      "modifier": -1
+    },
+    "deception": {
+      "ability": "charisma",
+      "proficient": true,
+      "expertise": true,
+      "modifier": 12
+    },
+    "history": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "insight": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "intimidation": {
+      "ability": "charisma",
+      "proficient": true,
+      "expertise": false,
+      "modifier": 8
+    },
+    "investigation": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "medicine": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "nature": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "perception": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "performance": {
+      "ability": "charisma",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 4
+    },
+    "persuasion": {
+      "ability": "charisma",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 4
+    },
+    "religion": {
+      "ability": "intelligence",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    },
+    "sleight_of_hand": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 3
+    },
+    "stealth": {
+      "ability": "dexterity",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 3
+    },
+    "survival": {
+      "ability": "wisdom",
+      "proficient": false,
+      "expertise": false,
+      "modifier": 0
+    }
+  },
+  "spellcasting": null,
+  "equipment": [
+    {
+      "name": "Crimson Mischief",
+      "type": "weapon",
+      "equipped": true,
+      "quantity": 1,
+      "magical": true,
+      "attunement_required": true,
+      "attuned": false
+    },
+    {
+      "name": "Bloodthirst",
+      "type": "weapon",
+      "equipped": true,
+      "quantity": 1,
+      "magical": true,
+      "attunement_required": true,
+      "attuned": false
+    },
+    {
+      "name": "Studded Leather",
+      "type": "armor",
+      "equipped": true,
+      "quantity": 1,
+      "magical": false,
+      "attunement_required": false,
+      "attuned": false
+    }
+  ],
+  "currency": {
+    "copper": 0,
+    "silver": 0,
+    "electrum": 0,
+    "gold": 8500,
+    "platinum": 0
+  },
+  "features": [],
+  "personality": {
+    "traits": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": ""
+  },
+  "appearance": {
+    "age": "",
+    "height": "",
+    "weight": "",
+    "eyes": "",
+    "skin": "",
+    "hair": ""
+  },
+  "backstory": "",
+  "conversion_info": {
+    "source": "BG3",
+    "source_character": "Lilith",
+    "warnings": [
+      {
+        "category": "class_mechanics",
+        "item": "Warlock",
+        "message": "BG3: Eldritch Blast is always learned.",
+        "severity": "info"
+      },
+      {
+        "category": "class_mechanics",
+        "item": "Warlock",
+        "message": "5e: Must choose Eldritch Blast as a cantrip.",
+        "severity": "info"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Eldritch Blast",
+        "message": "BG3: Warlocks always learn this cantrip.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell_mechanics",
+        "item": "Eldritch Blast",
+        "message": "5e: Must be chosen as one of your cantrips known.",
+        "severity": "warning"
+      },
+      {
+        "category": "spell",
+        "item": "Hex",
+        "message": "Mechanically similar, but BG3 handles ability check disadvantage differently in dialogue.",
+        "severity": "info"
+      },
+      {
+        "category": "spell",
+        "item": "Fireball",
+        "message": "Damage and radius are the same, but BG3 has more precise area targeting.",
+        "severity": "info"
+      },
+      {
+        "category": "equipment",
+        "item": "Crimson Mischief",
+        "message": "BG3-unique shortsword. Treat as homebrew.",
+        "severity": "warning"
+      },
+      {
+        "category": "equipment",
+        "item": "Bloodthirst",
+        "message": "BG3-unique dagger. Treat as homebrew legendary.",
+        "severity": "warning"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bg3-to-5e"
+version = "0.1.0"
+description = "Convert Baldur's Gate 3 save files to D&D 5e character sheets"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "nsimon" }
+]
+keywords = ["baldurs-gate-3", "dnd", "5e", "character-sheet", "converter"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Role-Playing",
+]
+
+dependencies = [
+    "click>=8.0",
+    "pydantic>=2.0",
+    "lz4>=4.0",
+    "zstandard>=0.22.0",
+    "pypdfform>=1.4",
+    "jinja2>=3.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "mypy>=1.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+bg3-to-5e = "bg3_to_5e.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bg3_to_5e"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

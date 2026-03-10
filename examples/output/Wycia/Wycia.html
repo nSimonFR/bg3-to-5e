@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wycia - D&D 5e Character Sheet</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f5f5; color: #333; line-height: 1.4; }
+        .sheet { max-width: 900px; margin: 20px auto; background: white; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header { border-bottom: 3px solid #8b0000; padding-bottom: 15px; margin-bottom: 20px; }
+        h1 { font-size: 2.5em; color: #8b0000; }
+        .subtitle { font-size: 1.1em; color: #666; }
+        .grid { display: grid; gap: 20px; }
+        .grid-2 { grid-template-columns: 1fr 1fr; }
+        .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+        .grid-6 { grid-template-columns: repeat(6, 1fr); }
+        section { margin-bottom: 25px; }
+        h2 { font-size: 1.3em; color: #8b0000; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
+        h3 { font-size: 1.1em; color: #555; margin-bottom: 10px; }
+        .stat-box { text-align: center; padding: 15px 10px; border: 2px solid #8b0000; border-radius: 8px; background: #fafafa; }
+        .stat-box .label { font-size: 0.75em; text-transform: uppercase; color: #666; font-weight: bold; }
+        .stat-box .value { font-size: 2em; font-weight: bold; color: #8b0000; }
+        .stat-box .modifier { font-size: 1.2em; color: #333; }
+        .combat-stats { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+        .combat-stat { text-align: center; min-width: 80px; }
+        .combat-stat .value { font-size: 2em; font-weight: bold; color: #8b0000; }
+        .combat-stat .label { font-size: 0.8em; text-transform: uppercase; color: #666; }
+        .save-list, .skill-list { list-style: none; }
+        .save-list li, .skill-list li { padding: 5px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        .proficient { font-weight: bold; }
+        .expertise { font-weight: bold; color: #8b0000; }
+        .spell-section { margin-top: 15px; }
+        .spell-level { background: #f0f0f0; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+        .spell-level h4 { margin-bottom: 8px; color: #8b0000; }
+        .spell-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .spell { background: white; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; font-size: 0.9em; }
+        .spell.prepared { border-color: #8b0000; background: #fff5f5; }
+        .equipment-list { list-style: none; }
+        .equipment-list li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .equipped { font-weight: bold; }
+        .magical { color: #8b0000; }
+        .features-list { list-style: none; }
+        .features-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
+        .feature-source { font-size: 0.8em; color: #666; }
+        .warnings { background: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .warnings h3 { color: #856404; margin-bottom: 10px; }
+        .warnings ul { margin-left: 20px; }
+        .warnings li { margin-bottom: 5px; }
+        .warning-info { color: #0c5460; }
+        .warning-warning { color: #856404; }
+        footer { margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9em; }
+        @media print {
+            body { background: white; }
+            .sheet { box-shadow: none; margin: 0; max-width: 100%; }
+        }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .grid-6 { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="sheet">
+        <header>
+            <h1>Wycia</h1>
+            <p class="subtitle">
+                Level 12
+                
+                    Sorcerer (Draconic Bloodline)
+                
+                &bull; Half-Elf
+                &bull; Noble
+            </p>
+        </header>
+
+        <section>
+            <div class="grid grid-6">
+                
+                <div class="stat-box">
+                    <div class="label">STR</div>
+                    <div class="value">8</div>
+                    <div class="modifier">-1</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="label">DEX</div>
+                    <div class="value">14</div>
+                    <div class="modifier">+2</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="label">CON</div>
+                    <div class="value">16</div>
+                    <div class="modifier">+3</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="label">INT</div>
+                    <div class="value">10</div>
+                    <div class="modifier">+0</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="label">WIS</div>
+                    <div class="value">12</div>
+                    <div class="modifier">+1</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="label">CHA</div>
+                    <div class="value">20</div>
+                    <div class="modifier">+5</div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="combat-stats">
+                <div class="combat-stat">
+                    <div class="value">18</div>
+                    <div class="label">Armor Class</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="value">+2</div>
+                    <div class="label">Initiative</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="value">30 ft</div>
+                    <div class="label">Speed</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="value">98/98</div>
+                    <div class="label">Hit Points</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="value">12d6</div>
+                    <div class="label">Hit Dice</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="value">+4</div>
+                    <div class="label">Proficiency</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-2">
+            <section>
+                <h2>Saving Throws</h2>
+                <ul class="save-list">
+                    
+                    <li class="">
+                        <span>Strength</span>
+                        <span>-1</span>
+                    </li>
+                    
+                    <li class="">
+                        <span>Dexterity</span>
+                        <span>+2</span>
+                    </li>
+                    
+                    <li class="proficient">
+                        <span>Constitution</span>
+                        <span>+7</span>
+                    </li>
+                    
+                    <li class="">
+                        <span>Intelligence</span>
+                        <span>+0</span>
+                    </li>
+                    
+                    <li class="">
+                        <span>Wisdom</span>
+                        <span>+1</span>
+                    </li>
+                    
+                    <li class="proficient">
+                        <span>Charisma</span>
+                        <span>+9</span>
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    
+                    
+                    
+                    <li class="">
+                        <span>Acrobatics (DEX)</span>
+                        <span>+2</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Animal Handling (WIS)</span>
+                        <span>+1</span>
+                    </li>
+                    
+                    
+                    <li class="proficient">
+                        <span>Arcana (INT)</span>
+                        <span>+4</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Athletics (STR)</span>
+                        <span>-1</span>
+                    </li>
+                    
+                    
+                    <li class="proficient">
+                        <span>Deception (CHA)</span>
+                        <span>+9</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>History (INT)</span>
+                        <span>+0</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Insight (WIS)</span>
+                        <span>+1</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Intimidation (CHA)</span>
+                        <span>+5</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Investigation (INT)</span>
+                        <span>+0</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Medicine (WIS)</span>
+                        <span>+1</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Nature (INT)</span>
+                        <span>+0</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Perception (WIS)</span>
+                        <span>+1</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Performance (CHA)</span>
+                        <span>+5</span>
+                    </li>
+                    
+                    
+                    <li class="expertise">
+                        <span>Persuasion (CHA)</span>
+                        <span>+13</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Religion (INT)</span>
+                        <span>+0</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Sleight Of Hand (DEX)</span>
+                        <span>+2</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Stealth (DEX)</span>
+                        <span>+2</span>
+                    </li>
+                    
+                    
+                    <li class="">
+                        <span>Survival (WIS)</span>
+                        <span>+1</span>
+                    </li>
+                    
+                </ul>
+            </section>
+        </div>
+
+        
+        <section>
+            <h2>Spellcasting</h2>
+            
+            <p>
+                <strong>Spellcasting Ability:</strong> Charisma &bull;
+                <strong>Spell Save DC:</strong> 17 &bull;
+                <strong>Spell Attack:</strong> +9
+            </p>
+            
+            <p>
+                <strong>Spell Slots:</strong>
+                1st: 4 |
+                2nd: 3 |
+                3rd: 3 |
+                4th: 3 |
+                5th: 2
+                 | 6th: 1
+                
+                
+                
+            </p>
+            <div class="spell-section">
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Cantrips</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Fire Bolt</span>
+                        
+                        <span class="spell prepared">Mage Hand</span>
+                        
+                        <span class="spell prepared">Ray of Frost</span>
+                        
+                        <span class="spell prepared">Chill Touch</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 1</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Shield</span>
+                        
+                        <span class="spell prepared">Magic Missile</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 2</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Misty Step</span>
+                        
+                        <span class="spell prepared">Scorching Ray</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 3</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Fireball</span>
+                        
+                        <span class="spell prepared">Counterspell</span>
+                        
+                        <span class="spell prepared">Haste</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 4</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Greater Invisibility</span>
+                        
+                        <span class="spell prepared">Dimension Door</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 5</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Cone of Cold</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="spell-level">
+                    <h4>Level 6</h4>
+                    <div class="spell-list">
+                        
+                        <span class="spell prepared">Disintegrate</span>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </section>
+        
+
+        
+        <section>
+            <h2>Equipment</h2>
+            <p><strong>Currency:</strong> 15000 gp</p>
+            <ul class="equipment-list">
+                
+                <li class="equipped magical">
+                    Staff of the Magi (similar)
+                    
+                    ✦
+                    (attuned)
+                </li>
+                
+                <li class="equipped magical">
+                    Robe of the Weave
+                    
+                    ✦
+                    (attuned)
+                </li>
+                
+                <li class="equipped magical">
+                    +1 Ring of Protection
+                    
+                    ✦
+                    
+                </li>
+                
+                <li class=" ">
+                    Potion of Greater Healing
+                    (x5)
+                    
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
+
+        
+        <section>
+            <h2>Features & Traits</h2>
+            <ul class="features-list">
+                
+                <li>
+                    <strong>Draconic Resilience</strong>
+                    <span class="feature-source">(class)</span>
+                    <p>Your hit point maximum increases by 1 for each sorcerer level.</p>
+                </li>
+                
+                <li>
+                    <strong>Metamagic: Quickened Spell</strong>
+                    <span class="feature-source">(class)</span>
+                    <p>Cast a spell with casting time of 1 action as a bonus action.</p>
+                </li>
+                
+                <li>
+                    <strong>Metamagic: Twinned Spell</strong>
+                    <span class="feature-source">(class)</span>
+                    <p>Target two creatures with a single-target spell.</p>
+                </li>
+                
+                <li>
+                    <strong>Elemental Affinity</strong>
+                    <span class="feature-source">(class)</span>
+                    <p>Add CHA modifier to damage of spells matching your draconic ancestry.</p>
+                </li>
+                
+            </ul>
+        </section>
+        
+
+        
+        <section class="warnings">
+            <h3>Conversion Notes</h3>
+            <ul>
+                
+                <li class="warning-info">
+                    <strong>Shield:</strong> Functions identically in both versions.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Magic Missile:</strong> BG3: Each missile rolls damage separately.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Magic Missile:</strong> 5e: Roll once, apply to all missiles (RAW, though many tables roll separately).
+                </li>
+                
+                <li class="warning-info">
+                    <strong>Misty Step:</strong> Functions identically, though BG3 has more precise positioning.
+                </li>
+                
+                <li class="warning-info">
+                    <strong>Fireball:</strong> Damage and radius are the same, but BG3 has more precise area targeting.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Counterspell:</strong> BG3: Reaction is automatic when enemy casts.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Counterspell:</strong> 5e: Must identify the spell being cast (optional rule) and choose to react.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Haste:</strong> BG3: Extra action can be used for any action.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Haste:</strong> 5e: Extra action limited to Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Markoheshkir:</strong> BG3-unique legendary staff. Consider as Staff of the Magi or homebrew.
+                </li>
+                
+                <li class="warning-info">
+                    <strong>Robe of the Weave:</strong> Unknown item &#39;Robe of the Weave&#39;, using as-is. May be BG3-specific.
+                </li>
+                
+                <li class="warning-info">
+                    <strong>+1 Ring of Protection:</strong> Unknown item &#39;+1 Ring of Protection&#39;, using as-is. May be BG3-specific.
+                </li>
+                
+                <li class="warning-info">
+                    <strong>Potion of Greater Healing:</strong> Unknown item &#39;Potion of Greater Healing&#39;, using as-is. May be BG3-specific.
+                </li>
+                
+                <li class="warning-warning">
+                    <strong>Tadpole Powers:</strong> Character has 3 Illithid powers. These have no 5e equivalent.
+                </li>
+                
+            </ul>
+        </section>
+        
+
+        <footer>
+            <p>Converted from Baldur's Gate 3 &bull; Generated by bg3-to-5e</p>
+        </footer>
+    </div>
+</body>
+</html>
