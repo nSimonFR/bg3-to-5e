@@ -10,7 +10,6 @@ from rich.table import Table
 
 from .core.character import AbilityName, AbilityScores, BG3Character, CharacterClass, DnD5eCharacter
 from .extractors.lsv_parser import LSVParser, SavePartyMember, list_saves
-from .extractors.se_import import ScriptExtenderImport
 from .mapping.converter import BG3To5eConverter
 from .output.dnd5e_json import DnD5eJsonExporter
 from .output.foundry_vtt import FoundryVTTExporter
@@ -158,7 +157,7 @@ def convert_cmd(
     """Convert a BG3 save file to D&D 5e character sheet(s).
 
     Extracts class, level, and race data from SaveInfo.json in the save file.
-    Ability scores, spells, and equipment require Script Extender for full fidelity.
+    Extracts ability scores, spells, and equipment from the binary save data.
     """
     console.print(f"[bold]Converting:[/bold] {save_file.name}")
 
@@ -204,120 +203,6 @@ def convert_cmd(
         console.print(f"[green]✓[/green] Saved to: {char_output}\n")
 
     console.print(f"[green bold]Conversion complete![/green bold]")
-
-
-@main.command("import-se")
-@click.argument("json_file", type=click.Path(exists=True, dir_okay=False, path_type=Path))
-@click.option(
-    "-f", "--format",
-    type=click.Choice(["json", "html", "pdf", "foundry", "roll20", "all"]),
-    default="all",
-    help="Output format(s)"
-)
-@click.option(
-    "-o", "--output",
-    type=click.Path(file_okay=False, path_type=Path),
-    default=Path("./output"),
-    help="Output directory"
-)
-@click.option(
-    "--pdf-template",
-    type=click.Path(exists=True, dir_okay=False, path_type=Path),
-    default=None,
-    help="PDF template file for filling"
-)
-@click.option(
-    "--show-warnings/--no-warnings",
-    default=True,
-    help="Show conversion warnings"
-)
-def import_se_cmd(
-    json_file: Path,
-    format: OutputFormat,
-    output: Path,
-    pdf_template: Path | None,
-    show_warnings: bool,
-):
-    """Import character data from BG3 Script Extender JSON export.
-
-    This is the recommended method for full-fidelity character extraction.
-    Use the bg3_export.lua script in BG3's Script Extender console.
-    """
-    console.print(f"[bold]Importing:[/bold] {json_file.name}")
-
-    try:
-        importer = ScriptExtenderImport(json_path=json_file)
-        bg3_chars = importer.import_all()
-    except Exception as e:
-        console.print(f"[red]Error parsing JSON:[/red] {e}")
-        raise SystemExit(1)
-
-    console.print(f"[green]Found {len(bg3_chars)} character(s)[/green]\n")
-
-    converter = BG3To5eConverter()
-
-    for bg3_char in bg3_chars:
-        console.print(Panel(f"[bold cyan]{bg3_char.name}[/bold cyan]"))
-
-        # Convert to 5e
-        dnd5e_char = converter.convert(bg3_char)
-
-        # Show character summary
-        _display_character_summary(dnd5e_char)
-
-        # Show warnings
-        if show_warnings and dnd5e_char.conversion_warnings:
-            _display_warnings(dnd5e_char)
-
-        # Export
-        char_output = output / _sanitize_filename(bg3_char.name)
-        _export_character(dnd5e_char, char_output, format, pdf_template)
-
-        console.print(f"[green]✓[/green] Saved to: {char_output}\n")
-
-    console.print(f"\n[green bold]Conversion complete![/green bold]")
-
-
-@main.command("se-setup")
-def se_setup_cmd():
-    """Show instructions for setting up BG3 Script Extender."""
-    instructions = """
-[bold cyan]BG3 Script Extender Setup[/bold cyan]
-
-The Script Extender allows exporting full character data from a running game.
-This bypasses the undocumented "NewAge" binary format in save files.
-
-[bold]One-time setup (~2 minutes):[/bold]
-
-1. [yellow]Download BG3 Script Extender[/yellow]
-   https://github.com/Norbyte/bg3se/releases
-
-2. [yellow]Extract to your BG3 installation[/yellow]
-   Linux (Steam): ~/.steam/steam/steamapps/common/Baldurs Gate 3/bin/
-   Windows: C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\
-
-3. [yellow]Copy the export script[/yellow]
-   Copy lua/bg3_export.lua to:
-   Linux: ~/.local/share/Larian Studios/Baldur's Gate 3/Script Extender/
-   Windows: %LOCALAPPDATA%\\Larian Studios\\Baldur's Gate 3\\Script Extender\\
-
-4. [yellow]Launch the game and open the console[/yellow]
-   Press ~ (tilde) to open the Script Extender console
-
-5. [yellow]Run the export[/yellow]
-   In the console, type:
-   [green]Ext.Require("bg3_export.lua")[/green]
-   [green]export5e()[/green]
-
-6. [yellow]Find your export[/yellow]
-   The JSON file will be saved to:
-   Linux: ~/.local/share/Larian Studios/Baldur's Gate 3/Script Extender/party_export.json
-   Windows: %LOCALAPPDATA%\\Larian Studios\\Baldur's Gate 3\\Script Extender\\party_export.json
-
-[bold]Then run:[/bold]
-[green]bg3-to-5e import-se party_export.json[/green]
-"""
-    console.print(Panel(instructions, title="Script Extender Setup"))
 
 
 def _apply_newage_stats(save_info, newage_stats) -> None:

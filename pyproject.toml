@@ -46,7 +46,7 @@ dev = [
 bg3-to-5e = "bg3_to_5e.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["bg3_to_5e"]
+packages = ["src/bg3_to_5e"]
 
 [tool.ruff]
 line-length = 100
@@ -61,4 +61,4 @@ strict = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["."]
+pythonpath = ["src"]

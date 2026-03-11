@@ -8,9 +8,7 @@ Convert Baldur's Gate 3 save files to standard D&D 5e character sheets in variou
 - **Full Mapping Engine**: Handles BG3-specific classes, spells, items, and races
 - **Conversion Warnings**: Flags mechanic differences between BG3 and tabletop 5e
 - **Split-Screen / Co-op Support**: Correctly identifies and names custom characters in multiplayer saves
-- **Two Extraction Modes**:
-  - **Script Extender** (recommended): Full fidelity export from running game
-  - **Save File Parsing**: Extracts character names, ability scores, classes, spells, equipment, and gold directly from `.lsv` save files
+- **Save File Parsing**: Extracts character names, ability scores, classes, spells, equipment, and gold directly from `.lsv` save files
 
 ## Installation
 
@@ -24,17 +22,6 @@ pip install -e .
 ```
 
 ## Quick Start
-
-### Using Script Extender (Recommended)
-
-1. Install [BG3 Script Extender](https://github.com/Norbyte/bg3se/releases)
-2. In-game, press `~` and run the export script
-3. Convert the export:
-   ```bash
-   bg3-to-5e import-se party_export.json -f all -o ./output/
-   ```
-
-### Using Save Files
 
 ```bash
 # List available saves
@@ -103,10 +90,10 @@ pip install -e ".[dev]"
 pytest
 
 # Type checking
-mypy bg3_to_5e/
+mypy src/
 
 # Linting
-ruff check bg3_to_5e/
+ruff check src/
 ```
 
 ## AI-Generated Project
