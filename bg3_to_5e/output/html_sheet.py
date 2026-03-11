@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, BaseLoader, select_autoescape
 
 from ..core.character import AbilityName, DnD5eCharacter
 
@@ -12,7 +12,7 @@ class HTMLSheetExporter:
 
     def __init__(self):
         self.env = Environment(
-            loader=PackageLoader("bg3_to_5e", "data/templates"),
+            loader=BaseLoader(),
             autoescape=select_autoescape(["html", "xml"]),
         )
         self.env.filters["modifier"] = self._format_modifier
@@ -21,11 +21,7 @@ class HTMLSheetExporter:
 
     def export(self, character: DnD5eCharacter, output_path: Path | str | None = None) -> str:
         """Export character to HTML."""
-        try:
-            template = self.env.get_template("character_sheet.html")
-        except Exception:
-            # Use inline template if file not found
-            template = self.env.from_string(self._get_default_template())
+        template = self.env.from_string(self._get_default_template())
 
         html = template.render(
             char=character,

@@ -14,11 +14,8 @@ Convert Baldur's Gate 3 save files to standard D&D 5e character sheets in variou
 
 ## Installation
 
-```bash
-pip install bg3-to-5e
-```
-
-Or install from source:
+<!-- TODO: publish to PyPI -->
+Install from source:
 
 ```bash
 git clone https://github.com/nSimonFR/bg3-to-5e.git
@@ -31,13 +28,8 @@ pip install -e .
 ### Using Script Extender (Recommended)
 
 1. Install [BG3 Script Extender](https://github.com/Norbyte/bg3se/releases)
-2. Copy `lua/bg3_export.lua` to your Script Extender folder
-3. In-game, press `~` and run:
-   ```lua
-   Ext.Require("bg3_export.lua")
-   export5e()
-   ```
-4. Convert the export:
+2. In-game, press `~` and run the export script
+3. Convert the export:
    ```bash
    bg3-to-5e import-se party_export.json -f all -o ./output/
    ```
@@ -111,12 +103,16 @@ pip install -e ".[dev]"
 pytest
 
 # Type checking
-mypy src/
+mypy bg3_to_5e/
 
 # Linting
-ruff check src/
+ruff check bg3_to_5e/
 ```
+
+## AI-Generated Project
+
+This project was fully generated using [Claude Code](https://claude.com/claude-code) (Opus 4.6) through approximately 10 planning sessions and ~$30 of API tokens for complete implementation, including binary format reverse-engineering, mapping engine, all exporters, and test suite.
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
