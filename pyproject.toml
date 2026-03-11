@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [
-    { name = "nsimon" }
+    { name = "nSimonFR-ai" }
 ]
 keywords = ["baldurs-gate-3", "dnd", "5e", "character-sheet", "converter"]
 classifiers = [
@@ -29,7 +29,7 @@ dependencies = [
     "pydantic>=2.0",
     "lz4>=4.0",
     "zstandard>=0.22.0",
-    "pypdfform>=1.4",
+    "pypdf>=4.0",
     "jinja2>=3.0",
     "rich>=13.0",
 ]
@@ -46,7 +46,7 @@ dev = [
 bg3-to-5e = "bg3_to_5e.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/bg3_to_5e"]
+packages = ["bg3_to_5e"]
 
 [tool.ruff]
 line-length = 100
@@ -61,4 +61,4 @@ strict = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["."]
